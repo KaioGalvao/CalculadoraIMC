@@ -8,7 +8,7 @@ Aplicação console para cálculo do IMC. O IMC é o índice de massa corporal, 
 
 ## Tecnologias utilizadas
 
-- dotnet 2.1
+- dotnet 6.0
 
 ## Como executar
 

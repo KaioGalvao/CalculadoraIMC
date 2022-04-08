@@ -9,13 +9,19 @@ float altura = Convert.ToSingle(Console.ReadLine());
 Console.WriteLine("Qual o seu peso em Kg? Ex: 54,3");
 float peso = Convert.ToSingle(Console.ReadLine());
 
-double imc = peso / (altura * altura);
+Individuo i =  new Individuo(nome, altura, peso);
+
+double imc = i.CalculoIMC(altura, peso);
 
 Console.WriteLine("{0}, você tem {1} metros de altura e {2} Kg.", nome, altura, peso);
 
 Console.WriteLine("Seu imc é {0}", imc);
 Console.WriteLine("------------------------------------------------------------------");
 
+
+
+
+/*
 if (imc < 17)
 {    
     Console.WriteLine("Muito abaixo do peso");
@@ -42,4 +48,4 @@ else if( imc > 35 && imc < 39.99)
 else
 {
     Console.WriteLine("Obesidade III (mórbida)");
-}
+}*/

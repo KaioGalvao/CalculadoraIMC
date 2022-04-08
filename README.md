@@ -1,10 +1,12 @@
 # Calculadora IMC
 
-Aplicação console para cálculo do IMC. O IMC é o índice de massa corporal, é uma razão entre o peso dividido por altura ao quadrado. 
+Aplicação console para cálculo do IMC. O IMC é o índice de massa corporal. É uma razão entre o peso dividido por altura ao quadrado. 
 
 ## Funcionalidades
 
-- Calcula o IMC
+- Calcula o IMC.
+- Mostra classificação do IMC segundo a tabela de massa corporal.
+- Verifica se é preciso perder ou ganhar peso para atingir o IMC ideal, calcula e mostra esse peso.
 
 ## Tecnologias utilizadas
 
@@ -12,7 +14,7 @@ Aplicação console para cálculo do IMC. O IMC é o índice de massa corporal, 
 
 ## Como executar
 
-Realiza o clone do repositório e execute o comando:
+Realize o clone do repositório e execute o comando:
 ```
 dotnet run
 ```

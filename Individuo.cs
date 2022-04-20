@@ -3,20 +3,13 @@ public class Individuo
     public string Nome { get; }
     public float Altura { get; set; }
     public float Peso { get; set;}
+    public double IMC{ get => Peso / (Altura * Altura);}
 
     public Individuo( string nome, float altura, float peso)
     {
         Nome = nome;
         Altura = altura;
         Peso = peso;
-    }
-
-    public double CalculoIMC(float altura, float peso) => peso / (altura * altura);
-
-
-     public String toString(double imc)
-    {
-        return Nome + " sua altura é " + Math.Round(Altura, 2) + " e seu peso é " + Math.Round(Peso, 2) + ". \nSeu IMC é " + Math.Round(imc, 2) + ".";
     }
 
     public String ClassificacaoIMC(double imc)

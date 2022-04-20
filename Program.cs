@@ -11,11 +11,9 @@ float peso = Convert.ToSingle(Console.ReadLine());
 
 Individuo i =  new Individuo(nome, altura, peso);
 
-double imc = i.CalculoIMC(altura, peso);
-
 Console.WriteLine("\t\t\tPrimeira Parte\n-----------------------------------------------------------------");
-Console.WriteLine(i.toString(imc));
+Console.WriteLine(i.IMC);
 Console.WriteLine("\t\t\tSegunda Parte\n-----------------------------------------------------------------");
-Console.WriteLine(i.ClassificacaoIMC(imc));
+Console.WriteLine(i.ClassificacaoIMC(i.IMC));
 Console.WriteLine("\t\t\tTerceira Parte\n-----------------------------------------------------------------");
 Console.WriteLine(i.PesoIdeal(altura, peso, imc));
